@@ -1,0 +1,15 @@
+/*** COMMON ***/
+strong {
+  font-weight: 600;
+}
+strong.color {
+  color: var(--cl-primary);
+}
+.screen-out {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-align: -99999px;
+  overflow: hidden;
+}
