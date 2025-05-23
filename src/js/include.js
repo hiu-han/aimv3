@@ -1,5 +1,5 @@
-$(document).ready(function () {
+$(function () {
   $('#header').load('./include/header.html');
   $('#footer').load('./include/footer.html');
-  // $('#aside').load('./include/aside.html');
+  $('#aside').load('./include/aside.html');
 });

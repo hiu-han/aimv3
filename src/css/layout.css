@@ -1,0 +1,8 @@
+.layout-asd {
+  width: 260px;
+  background-color: lightcoral;
+}
+header {
+  height: var(--ht-hd);
+  background-color: lightgray;
+}

@@ -18,18 +18,275 @@
 
 <body>
   <div id="wrap">
-    <div id="header"></div>
+    <!-- 좌측 // ASIDE -->
+    <div id="aside" class="layout-asd layout--left"></div>
 
+    <!-- 중앙 // MAIN -->
     <div id="main">
-      <div class="wrapper">
+      <!-- 헤더 -->
+      <div id="header"></div>
 
+      <div class="wrapper addRight">
+        <!-- CONTENTS SECTION -->
+        <section class="layout-sect layout--center">
+          <div class="sect_inner">
+            <!-- 대화 // 초기 유닛 // 인삿말, 질문 예시 -->
+            <article class="cont-artic artic--initial on">
+              <!-- 사용자님의 분석을 도와드릴게요 -->
+              <div class="main-greeting cont_wrap">
+                <div class="greenting">
+                  <p class="icon"></p>
+                  <p class="txt">
+                    <em class="name">사용자</em>
+                    <span class="subs">님의 분석을 도와드릴게요</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- 질문 예시 -->
+              <div class="prompt-sample cont_wrap">
+                <div class="cont-hd">
+                  <div class="cont-title small">
+                    <p class="txt">질문 예시</p>
+                  </div>
+                </div>
+                <div class="cont-bd">
+                  <div class="bd_inner scrbar">
+                    <ul class="txt_list prompt">
+                      <li class="txt_item">
+
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 대화 // 대화 창 -->
+            <article class="cont-artic artic--conv">
+              <div class="aim-conv cont_wrap">
+                <div class="cont-bd">
+                  <div class="bd_inner scrbar">
+                    <div class="conv_wrap">
+                      <!-- 대화 user -->
+                      <div class="conv--user">
+                        <div class="q_wrap">
+                          <div class="q_box">
+                            2024년 기준, 대한민국 인구수를 지역별, 성/연령별로 분석해줘
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 대화 aim -->
+                      <div class="conv--ai">
+                        <div class="a_wrap">
+                          <div class="conv-opt">
+                            <div class="opt--right">
+                              <p class="btn ty--icon copy">
+                                <button>복사</button>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="a_box">
+                            <h3>브랜드별 소셜 VOC의 현황 분석</h3>
+                            <h4>요약</h4>
+                            <p>
+                              당사는 가장 많은 게시글 수와 조회수를 기록하며 시장에서 강력한 존재감을 나타내고 있습니다. M사는 높은 바이럴 게시글 수를 보유하고 있지만, 소비자 게시글 수는
+                              상대적으로 낮은 편입니다. L사는 전체 지표에서 가장 낮은 수치를 기록하여 개선이 필요합니다.
+                            </p>
+                            <h4>상세 분석</h4>
+                            <p>
+                              브랜드별 게시글 수를 살펴보면, 당사가 18,874건으로 가장 많은 게시글을 보유하고 있으며, 그 뒤를 이어 M사가 17,233건으로 뒤따릅니다. X사는
+                              9,096건,
+                              L사는 4,411건으로 상대적으로 낮은 수치를 보입니다. 지표 측면에서는 당사가 댓글 수(37,619), 조회수(2,526,299), 좋아요 수(154,185)
+                              모두에서
+                              가장 높은 수치를 기록하고 있습니다. M사는 댓글 수에서 30,103건으로 뒤를 따르지만, 조회수와 좋아요 수에서는 각각 1,207,749건, 126,514건으로
+                              당사에
+                              비해 낮습니다. L사는 모든 지표에서 가장 낮은 성과를 보이고 있습니다.
+                            </p>
+                            <h4>인사이트 및 제안</h4>
+                            <p>
+                              당사는 높은 게시글 수와 상호작용 지표를 바탕으로 브랜드 인지도를 더욱 강화할 수 있는 기회를 가지고 있습니다. M사는 바이럴 콘텐츠를 활용하여 소비자 게시글
+                              수를
+                              증가시키는 전략이 필요합니다. L사는 브랜드 이미지 개선과 소비자와의 소통을 강화하기 위한 마케팅 활동을 확대해야 할 것으로 보입니다. 전반적으로, 각 브랜드는
+                              소셜
+                              미디어에서의 존재감을 높이기 위해 소비자 피드백을 적극적으로 반영하고, 콘텐츠 전략을 재정비할 필요가 있습니다.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 대화 // 말 입력창 -->
+            <article class="cont-artic artic--user-input">
+              <!-- 입력창 -->
+              <div class="user-q cont_wrap">
+                <div class="cont-hd">
+                  <div class="hd--right">
+                    <div class="hd-opt" id="qEx">
+                      <p class="btn ty--icon-txt popOpener" id="qExOpener">
+                        <button>질문 예시</button>
+                      </p>
+                      <div class="opt-sub">
+                        <p class="btn btn--x cls popCloser" id="qExCloser">
+                          <button>X</button>
+                        </p>
+                        <div class="sub_inner">
+                          <ul class="sub_list">
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">브랜드별 현황을 분석해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">프로파일별 반응을 분석해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">이슈를 분석해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">채널 운영 전략 수립 방안을 알려줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">캠페인 효과를 분석해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">추가적인 분석을 제안해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">이슈별 개선 방안을 제안해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">브랜드별 현황을 분석해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">프로파일별 반응을 분석해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">이슈를 분석해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">채널 운영 전략 수립 방안을 알려줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">캠페인 효과를 분석해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">추가적인 분석을 제안해줘</span>
+                            </li>
+                            <li class="sub_item">
+                              <em class="icon"></em>
+                              <span class="txt">이슈별 개선 방안을 제안해줘</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont-bd">
+                  <div class="bd_inner">
+                    <div class="q_wrap">
+                      <form action="">
+                        <!-- 질문 -->
+                        <div class="q-input">
+                          <!-- 엔터키, 전송 버튼으로 전송 가능 -->
+                          <textarea name="" id="inputQ" placeholder="에임에게 물어보세요"></textarea>
+                        </div>
+
+                        <!-- 옵션 -->
+                        <div class="q-otp">
+                          <div class="q--left"></div>
+                          <div class="q--right">
+                            <p class="btn ty--icon submit">
+                              <button>전송</button>
+                            </p>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- INDEX SECTION -->
+        <section class="layout-sect layout--right on">
+          <div class="sect_inner">
+            <!-- 조건 검색 -->
+            <article class="cont-artic artic--index-srch">
+              <!-- 검색 탑 // 검색 날짜 표기  -->
+              <div class="srched-date cont_wrap">
+
+              </div>
+              <!-- 검색 디테일 // 검색 설정 // 브랜드, 날짜, 채널 -->
+              <div class="srch-detail cont_wrap">
+
+              </div>
+            </article>
+
+            <!-- 지표 콘텐츠 // 브랜드, 주요지표 -->
+            <article class="cont-artic artic--index-brand">
+              <!-- 지표 // 1. 브랜드 -->
+              <div class="index--brand cont_wrap">
+                <div class="cont-hd">
+                  <div class="cont-title small">
+                    <em class="icon"></em>
+                    <p class="txt">1. 우리 브랜드 현황</p>
+                  </div>
+                </div>
+
+                <div class="cont-bd">
+                  <div class="bd_inner">
+                    <!-- 지표 브랜드 자리 -->
+                    CONTENT RIGHT
+                  </div>
+                </div>
+              </div>
+
+              <!-- 지표 // 2. 주요 지표 -->
+              <div class="index--key cont_wrap">
+                <div class="cont-hd">
+                  <div class="cont-title small">
+                    <em class="icon"></em>
+                    <p class="txt">2. 주요 지표</p>
+                  </div>
+                </div>
+
+                <div class="cont-bd">
+                  <div class="bd_inner">
+                    <!-- 지표 주요 지표 자리 -->
+                    CONTENT RIGHT
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
     </div>
 
     <div id="footer"></div>
   </div>
 
-  <script src="./src/js/jquery-3.5.1.js"></script>
+  <script src="./src/js/jquery-3.7.1.js"></script>
   <script src="./src/js/include.js"></script>
   <script src="./src/js/main.js"></script>
 </body>

@@ -1,0 +1,55 @@
+:root {
+  /* 규격 */
+  --ht-hd: 56px;
+}
+
+/*** COMMON ***/
+
+/*** LAYOUT ***/
+#wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 0;
+  position: relative;
+  width: 100%;
+  height: calc(100% - var(--ht-hd));
+}
+
+.wrapper .layout-sect.layout--center {
+  width: 100%;
+  background-color: lightblue;
+}
+.wrapper.addRight .layout-sect.layout--center {
+  width: 50%;
+}
+
+.wrapper .layout-sect.layout--right {
+  position: absolute;
+  left: 100%;
+  background-color: lightgreen;
+}
+.wrapper.addRight .layout-sect.layout--right {
+  position: relative;
+  left: unset;
+  width: 50%;
+}
+
+/*** MAIN ***/
